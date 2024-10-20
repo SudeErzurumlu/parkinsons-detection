@@ -4,7 +4,7 @@ This repository contains code for detecting Parkinson's disease using machine le
 
 ## Dataset
 
-The dataset used for this project is obtained from Kaggle. It contains features extracted from voice recordings of patients with Parkinson's disease. You can access the dataset [here](https://www.kaggle.com/datasets/).
+The dataset used for this project is obtained from Kaggle. It contains features extracted from voice recordings of patients with Parkinson's disease. You can access the dataset [here]((https://www.kaggle.com/datasets/shreyadutta1116/parkinsons-disease/)).
 
 ### Dataset Features
 - `name`: Identifier for each record (not used in training)
