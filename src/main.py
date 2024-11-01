@@ -1,4 +1,4 @@
-# Importing necessary libraries
+# Import necessary libraries
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -7,7 +7,10 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 from sklearn.ensemble import RandomForestClassifier
 
 # Load the dataset
-data = pd.read_csv('/path/to/dataset/dataset.csv')
+data = pd.read_csv('dataset.csv')
+
+# Filter out rows with target values other than 0 or 1
+data = data[data['status'].isin([0, 1])]
 
 # Prepare the data
 X = data.drop(columns=['name', 'status'])  # Drop non-numeric column 'name'
